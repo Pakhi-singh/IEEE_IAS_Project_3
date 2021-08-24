@@ -1,0 +1,32 @@
+{% load static %}
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+<!-- Navbar -->
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" class="logo"><p style="font-weight:bolder">GREENWAY</p></a>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="#" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Products</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">About Us</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+            <a href="{% url 'blogs' %}" class="nav-links">Blog</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Javasript -->
+<script src="{% static 'js/navbar.js' %}"></script>

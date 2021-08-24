@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/items.css' %}">
+
+<h1>Item List</h1>
+<div class="container">
+    {% for item in items %}
+    <!-- Individual Item -->
+    <div class="card">
+        <!-- Item Image -->
+        <div class="card-image">
+            <img src="{{item.image.url}}" alt=""> <br>
+        </div>
+        <!-- Item Description -->
+        <div class="card-description">
+            Rs. {{ item.price }} <br>
+            {{ item.description }} <br>
+            Rating : {{ item.rating }} <br>
+            Offers : {{ item.offers }} <br><br>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
