@@ -26,24 +26,24 @@
     text-shadow: -1px -1px 0px green, 4px 4px 0px green, 6px 6px 0px green;
     color: #50C878;
     position: relative;
-    bottom: 10%;
+    top: 5%;
     font-weight: 600;
 
 }
 
 .card_para {
     position: relative;
-    bottom: 15%;
+    top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-    font-size: 1.02rem;
+    font-size: 0.89rem;
 
 }
 
 
 @media all and (max-width: 700px) {
     .card {
-        height: 800px;
+        height: 900px;
     }
 }
