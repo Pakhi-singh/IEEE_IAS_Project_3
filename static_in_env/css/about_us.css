@@ -1,49 +1,62 @@
-.cards-list {
-    z-index: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .card {
     margin: 30px auto;
     width: 800px;
-    height: 650px;
+    height: 465px;
     border-radius: 40px;
     box-shadow: 5px 5px 30px 7px rgb(0, 128, 0, 0.234), -5px -5px 30px 7px rgb(0, 128, 0, 0.22);
 
 }
 
-
-.card_title {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    text-align: center;
-    margin: 0px auto;
-    font-size: 60px;
-    letter-spacing: 6px;
-    text-shadow: -1px -1px 0px green, 4px 4px 0px green, 6px 6px 0px green;
-    color: #50C878;
-    position: relative;
-    top: 5%;
-    font-weight: 600;
-
-}
-
 .card_para {
-    position: relative;
-    top: 10%;
+    text-align: justify;
+    font-size: 0.86rem;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: justify;
-    font-size: 0.89rem;
 
 }
 
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    color: #177245;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
 
-@media all and (max-width: 700px) {
+}
+@media screen and (max-width:320px) {
     .card {
-        height: 900px;
+        height: 800px;
+        width: 268px
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        height: 700px;
+        width: 468px
     }
 }
