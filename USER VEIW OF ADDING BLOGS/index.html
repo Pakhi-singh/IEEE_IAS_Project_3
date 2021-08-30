@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2  class="title" style="font-weight: 800; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; font-size: 2rem;">ADD BLOG...</h2>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="title" style="font-weight: 600;">TITLE</label>
+          <input type="text" id="title" name="titleblog" placeholder="Title of the blog....">       
+                 
+          <label for="category"style="font-weight: 600;"" >CATEGORY</label>
+          <select id="category" name="category">
+            <option value="plant talk">PLANT TALK</option>
+            <option value="kitchen gardening">KITCHEN GARDENING</option>
+            <option value="plant styling">PLANT STYLING</option>
+            <option value="sustainable development">SUSTAINABLE DEVELOPEMENT</option>
+            <option value="gardening diy's">GARDENING DIY'S</option>
+          </select>
+      
+          <label for="content" style="font-weight: 600;"">CONTENT</label>
+          <textarea id="content" name="subject" placeholder="Write  your blog" style="height:250px"></textarea>
+          
+          
+          <label for="aname" style="font-weight: 600;"">AUTHOR'S NAME</label>
+          <input type="text" id="aname" name="" placeholder="Author name.....">
+          <label for="date" style="font-weight: 600;"">DATE OF PUBLISHING THE BLOG</label>
+          <div class="date-picker">
+            <div class="selected-date"></div>
+    
+            <div class="dates">
+                <div class="month">
+                    <div class="arrows prev-mth">&lt;</div>
+                    <div class="mth"></div>
+                    <div class="arrows next-mth">&gt;</div>
+                </div>
+    
+                <div class="days"></div>
+            </div>
+        </div> 
+          
+          
+          
+        <div class="file-upload">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+          
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+              </div>
+            </div>
+            <div class="file-upload-content">
+              <img class="file-upload-image" src="#" alt="your image" />
+              <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+              </div>
+            </div>
+        </div>    
+        
+        <button class="sbtn">
+            <span>SUBMIT</span>
+        </button>
+        </form>
+      </div>
+      <script src="main.js"></script>
+      <script src="main1.js"></script>
+      <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</body>
+</html>
